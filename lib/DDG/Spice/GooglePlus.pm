@@ -4,18 +4,19 @@ package DDG::Spice::GooglePlus;
 use DDG::Spice;
 
 spice to => 'https://www.googleapis.com/plus/v1/people/$1?query=$2&key={{ENV{DDG_SPICE_GOOGLE_PLUS_APIKEY}}}&callback={{callback}}';
-spice from => '^([^~]*)~([^~]*)$';
+spice from => '(.*?)-(.*)';
+spice proxy_ssl_session_reuse => "off";
 
 triggers startend => 'google+', 'google plus', 'g+', 'gplus', '+';
 
 handle remainder => sub {
 	my $query = $_;
 	if($query =~ /(\d+)$/) {
-		return $1.'~'; 
+		return $1.'-'; 
 	}
 
     if($query =~ /((?:[a-zA-Z]|\s)+)$/) {
-		return '~'.$1;
+		return '-'.$1;
 	}
 	return;
 };
