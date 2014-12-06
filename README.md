@@ -1,23 +1,11 @@
-DuckDuckGo Goodie Plugins
-=================================
+# DuckDuckHack Goodies [![Build Status](https://travis-ci.org/duckduckgo/zeroclickinfo-goodies.png?branch=master)](https://travis-ci.org/duckduckgo/zeroclickinfo-goodies)
 
-See [DuckDuckHack](http://duckduckhack.com/) for documentation (including a tutorial and step by step instructions).
+This repository contains all the Goodie instant answers. If you are developing a Goodie instant answer you will need to fork this repository.
 
+**If you would like to contribute to DuckDuckHack, please start by reading the [DuckDuckHack Documentation](https://dukgo.com/duckduckhack/ddh-intro).**
 
-Contributing
-------------
+------
 
-First off, thank you!
+### Goodie Instant Answer Example
 
-
-### Process
-
-1) Pick [a spice project](https://duckduckhack.uservoice.com/forums/5168-instant-answer-plugin-ideas-for-duckduckgo/category/41838-spice) (or add one) and comment that you're working on it.
-
-2) [Hack](http://duckduckhack.com/#plugin-tutorial).
-
-3) [Test](http://duckduckhack.com/#testing-triggers).
-
-4) Submit a [pull request](http://help.github.com/send-pull-requests/).
-
-Feel free to [ask questions](http://duckduckhack.com/#faq)!
+![Unit Conversion Example](https://raw.githubusercontent.com/duckduckgo/duckduckgo-documentation/master/duckduckhack/assets/goodie_readme_example.png)
